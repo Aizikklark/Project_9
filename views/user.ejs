@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <%- include('blocks/header') -%>
+    <main>
+        <h1>Страница пользователя: <%= username %></h1>
+        <% if(username.toLowerCase() == 'john') { %>
+            <ul>
+                <% hobbies.forEach((el) => { %>
+                    <li><%= el %></li>
+                <% }) %>
+            </ul>
+            <p>Test</p>
+        <% } %>
+
+        <% if(username.toLowerCase() == 'aizik') { %>
+            <ul>
+                <% hobbies_aizik.forEach((el) => { %>
+                    <li><%= el %></li>
+                <% }) %>
+            </ul>
+            <p>Hobbies for this person</p>
+        <% } %>
+
+        <% if(username.toLowerCase() == 'adahar') { %>
+            <ul>
+                <% hobbies_jenek.forEach((el) => { %>
+                    <li><%= el %></li>
+                <% }) %>
+            </ul>
+            <p>Hobbies for this person</p>
+        <% } %>
+
+
+        <% if(username.toLowerCase() == 'leha') { %>
+            <ul>
+                <% hobbies.forEach((el) => { %>
+                    <li><%= el %></li>
+                <% }) %>
+            </ul>
+            <p>Hobbies for this person</p>
+        <% } %>
+
+        <% if(username.toLowerCase() == 'vanek') { %>
+            <ul>
+                <% hobbies.forEach((el) => { %>
+                    <li><%= el %></li>
+                <% }) %>
+            </ul>
+            <p>Hobbies for this person</p>
+        <% } %>
+
+
+    </main>
+</body>
+</html>
